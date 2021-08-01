@@ -6,44 +6,46 @@ int main()
 {
 	vector<int> v1;
 	cout << v1.size() << endl;
-	for (int i = 0; i != v1.size(); i++)
+	vector<int>::iterator it;
+	for (it = v1.begin(); it != v1.end(); it++)
 	{
-		cout << v1[i] << endl;
+		cout << *it << endl;
 	}
 	vector<int> v2(10);
 	cout << v2.size() << endl;
-	for (int i = 0; i != v2.size(); i++)
+	for (it=v2.begin();it!=v2.end();it++)
 	{
-		cout << v2[i] << endl;
+		cout << *it << endl;
 	}
 	vector<int> v3(10, 42);
 	cout << v3.size() << endl;
-	for (int i = 0; i != v3.size(); i++)
+	for (it = v3.begin(); it != v3.end(); it++)
 	{
-		cout << v3[i] << endl;
+		cout << *it << endl;
 	}
 	vector<int> v4{ 10 };
 	cout << v4.size() << endl;
-	for (int i = 0; i != v4.size(); i++)
+	for (it = v4.begin(); it != v4.end(); it++)
 	{
-		cout << v4[i] << endl;
+		cout << *it << endl;
 	}
 	vector<int> v5{ 10,42 };
 	cout << v5.size() << endl;
-	for (int i = 0; i != v5.size(); i++)
+	for (it = v5.begin(); it != v5.end(); it++)
 	{
-		cout << v5[i] << endl;
+		cout << *it << endl;
 	}
 	vector<string> v6{ 10 };
+	vector<string>::iterator is;
 	cout << v6.size() << endl;
-	for (int i = 0; i != v6.size(); i++)
+	for (is = v6.begin(); is != v6.end(); is++)
 	{
-		cout << v6[i] << endl;
+		cout << *is << endl;
 	}
 	vector<string> v7{ 10,"hi" };
 	cout << v7.size() << endl;
-	for (int i = 0; i != v7.size(); i++)
+	for (is = v7.begin(); is != v7.end(); is++)
 	{
-		cout << v7[i] << endl;
+		cout << *is << endl;
 	}
 }
